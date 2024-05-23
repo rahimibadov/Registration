@@ -1,0 +1,202 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+
+  input, button{
+    border: none;
+    outline: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*^ STARTS */
+
+  .login{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+  }
+  .login-form {
+    width: 50%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffffff;
+    margin-inline: 1.5rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(8px);
+  }
+/* elave ettiklerim */
+  .user-photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* background-color: red; */
+  }
+  .user-photo input[type=file]{
+    display: none;
+  }
+  #defaultPhoto{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .login-content,
+  .login-box{
+    display: grid;
+  }
+
+  h1{
+    text-align: center;
+    padding-top: 70px;
+  }
+
+  .login-content{
+    row-gap: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+.login-box{
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: 0.75rem;
+  border-bottom: 2px solid white;
+}
+.logic-icon,
+.login-eye{
+  font-size: 1.25rem;
+}
+.login-input{
+  width: 100%;
+  padding-block: 0.8rem;
+  position: relative;
+  background: none;
+  color: white;
+  z-index: 1;
+}
+.login-box-input{
+  position: relative;
+}
+.login-label{
+  position: absolute;
+  left: 0;
+  top: 13px;
+  font-weight: normal;
+  transition:top .3s, font-size .3s ;
+}
+.login-eye{
+  position: absolute;
+  right: 0;
+  top: 18px;
+  z-index: 10;
+  cursor: pointer;
+}
+.login-box:nth-child(2) input{
+  padding-right: 1.8rem;
+}
+
+.login-check,
+.login-check-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login-check{
+  margin-bottom: 1.5rem;
+  font-size: 42px;
+}
+
+.login-check-label,
+.login-forgot,
+.login-register{
+  font-size: 18px;
+}
+.login-check-group{
+  column-gap: .5rem;
+}
+.login-check-input{
+  width: 16px;
+  height: 16px;
+}
+.login-forgot{
+  color: white;
+}
+.login-forgot:hover{
+  text-decoration: underline;
+}
+.login-button{
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.login-register a{
+  color: white;
+}
+
+.login-input:focus + .login-label{
+  top: -12px;
+  font-size: small;
+}
+
+.login-input:not(:placeholder-shown).login-input:not(:focus) + .login-label {
+  top: -12px;
+  font-size: small;
+}
+
+@media only screen  and (max-width:800px){
+  .login-check .login-check-label, .login-forgot, .login-register{
+    font-size: 15px;
+    text-align: center;
+  }
+  .login-button{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    background-color: white;
+    font-weight: 400;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

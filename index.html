@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>register</title>
+</head>
+
+<body>
+
+    <div class="login">
+        <img src="./img/login-bg.png" alt="login image" class="login-img">
+
+        <form action="" class="login-form">
+            <!-- elave edirem -->
+            <div class="user-photo">
+                <input type="file" id="inputFile"> 
+                <img src="./img/Default_pfp.svg.png" alt="userDefaultPhoto" id="defaultPhoto">
+            </div>
+
+
+
+
+            <h1 class="login-title">Login</h1>
+
+            <div class="login-content">
+
+                <div class="login-box">
+                    <i class="ri-user-3-line login-icon"></i>
+                    <div class="login-box-input">
+                        <input type="email" required class="login-input" id="loginEmail" placeholder="">
+                        <label for="login-email" class="login-label">Email</label>
+                    </div>
+                </div>
+
+                <div class="login-box">
+                    <i class="ri-lock-2-fill login-icob"></i>
+                    <div class="login-box-input">
+                        <input type="password" required class="login-input" id="login-pass" placeholder="">
+                        <label for="logn-pass" class="login-label">Password</label>
+                        <i class="ri-eye-off-line login-eye" id="login-eye"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="login-check">
+                <div class="login-check-group">
+                    <input type="checkbox" class="login-check-input" id="login-check">
+                    <label for="login-check" class="login-check-label">Remember Me</label>
+                </div>
+
+                <a href="#" class="login-forgot">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login-button">Login</button>
+
+            <p class="login-register">
+                Don't have an account? <a href="#">Register</a>
+            </p>
+        </form>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
